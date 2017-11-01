@@ -1,5 +1,36 @@
-.hw {
+body {
+  background-color: lightgrey;
+  height: 100vh;
+
+}
+
+.page {
+  background-color: white;
+  margin: auto;
+  width: 70vw;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+.red {
+  background-color: orangered;
+}
+
+.blue {
+  background-color: steelblue;
+}
+
+.green {
+  background-color: yellowgreen;
+}
+
+.page div {
+  flex: 1;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
 }
