@@ -1,16 +1,26 @@
 body {
   background-color: lightgrey;
-  height: 100vh;
-
 }
 
 .page {
-  background-color: white;
   margin: auto;
+  background-color: lightgrey;
   width: 70vw;
-  height: 100vh;
+  height: 150vh;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.white {
+  background-color: white;
 }
 
 .red {
@@ -26,11 +36,21 @@ body {
 }
 
 .page div {
-  flex: 1;
   margin: 10px;
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
+.very-small {
+  flex: 1 0 auto;
+}
+
+.small {
+  flex: 2 0 auto;
+}
+
+.medium {
+  flex: 4 0 auto;
+}
+
+.big {
+  flex: 8 0 auto;
 }
