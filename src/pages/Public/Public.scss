@@ -1,0 +1,50 @@
+body {
+    background-color: lightgrey;
+    .page {
+        margin: auto;
+        background-color: lightgrey;
+        width: 70vw;
+        height: 300vh;
+        div {
+            margin: 10px;
+        }
+    }
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .white {
+        background-color: white;
+    }
+    
+    .red {
+        background-color: orangered;
+    }
+    
+    .blue {
+        background-color: steelblue;
+    }
+    
+    .green {
+        background-color: yellowgreen;
+    }
+    .very-small {
+        flex: 1 0 auto;
+    }
+    
+    .small {
+        flex: 2 0 auto;
+    }
+    
+    .medium {
+        flex: 4 0 auto;
+    }
+    
+    .big {
+        flex: 8 0 auto;
+    }
+}

@@ -1,3 +1,3 @@
-<template src="./Public.htm"></template>
+<template src="./Public.html"></template>
 <script src="./Public.js"></script>
-<style src="./Public.css"></style>
+<style lang="scss" src="./Public.scss"></style>
