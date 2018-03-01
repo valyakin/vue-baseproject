@@ -1,0 +1,20 @@
+@import '~src/styles/colors';
+
+.button-component {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: $a700;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba($a700, .3);
+  &:hover {
+    background-color: $a800;
+  }
+  &:active {
+    box-shadow: 0 0 8px rgba($a700, .5);
+    transform: translateY(4px);
+  }
+}
