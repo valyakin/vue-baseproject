@@ -3,7 +3,7 @@ export default {
     label: String
   },
   methods: {
-    click () {
+    onClick () {
       this.$emit('click')
     }
   }

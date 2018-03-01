@@ -1,4 +1,4 @@
-@import '~src/styles/colors';
+@import '../../../styles/colors';
 
 .button-component {
   display: inline-block;
@@ -9,12 +9,12 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
-  box-shadow: 0 4px 8px rgba($a700, .3);
+  box-shadow: 0 2px 8px rgba($a700, .3);
   &:hover {
     background-color: $a800;
   }
   &:active {
     box-shadow: 0 0 8px rgba($a700, .5);
-    transform: translateY(4px);
+    transform: translateY(2px);
   }
 }

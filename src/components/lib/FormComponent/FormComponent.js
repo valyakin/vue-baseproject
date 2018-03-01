@@ -1,4 +1,4 @@
-import { ButtonComponent, InputComponent } from 'src/components'
+import { ButtonComponent, InputComponent } from '../../../components'
 
 export default {
   components: {
