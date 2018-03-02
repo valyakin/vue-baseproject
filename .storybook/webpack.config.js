@@ -1,4 +1,4 @@
-webpackMainConfig = require('../build/webpack.base.conf')
+webpackMainConfig = require('../webpack.config')
 
 module.exports = {
   resolve: webpackMainConfig.resolve,
