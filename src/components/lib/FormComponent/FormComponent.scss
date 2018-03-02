@@ -1,5 +1,5 @@
-@import '../../../styles/mixins';
-@import '../../../styles/colors';
+@import '~src/styles/mixins';
+@import '~src/styles/colors';
 
 .form-component {
     @include flex(column, flex-start, flex-end);
