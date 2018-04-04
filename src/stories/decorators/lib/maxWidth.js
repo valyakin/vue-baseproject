@@ -1,9 +1,9 @@
-export default minWidth => function () {
+export default maxWidth => function () {
   return {
     render (h) {
       return (
       <div style={{
-        minWidth: `${minWidth}px`
+        maxWidth: `${maxWidth}px`
       }}>
         <story/>
       </div>
@@ -11,4 +11,3 @@ export default minWidth => function () {
     }
   }
 }
-

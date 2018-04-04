@@ -1,3 +1,4 @@
-export { default as CenterDecorator } from './Center'
-export { default as MaxWidth } from './MaxWidth'
-export { default as MinWidth } from './MinWidth'
+export { default as center } from './lib/center'
+export { default as maxWidth } from './lib/maxWidth'
+export { default as minWidth } from './lib/minWidth'
+export { default as fixWidthHeight } from './lib/fixWidthHeight'

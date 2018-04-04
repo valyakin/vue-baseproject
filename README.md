@@ -1,6 +1,6 @@
-# vuetest
+# vue-baseproject
 
-> A Vue.js project
+> A Vue.js base project
 
 ## Build Setup
 
@@ -16,4 +16,10 @@ yarn storybook
 
 # build for production with minification
 yarn build
+
+# generate component files from template
+yarn generate:component ComponentName
+
+# generate page files from template
+yarn generate:page PageName
 ```
