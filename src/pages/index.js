@@ -1,5 +1,1 @@
-import Public from './Public/Public.vue'
-
-export default {
-  Public: Public
-}
+export { default as PublicPage } from './PublicPage/PublicPage.vue'

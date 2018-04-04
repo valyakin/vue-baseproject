@@ -13,26 +13,27 @@ storiesOf('widgets/FormComponent', module)
   .add('normal', () => ({
     components,
     render (h) {
-      return <form-component />
-    }
+      return <form-component onSubmit={this.logEvent}/>
+    },
+    methods: { logEvent: action('submited!') }
   }))
 
-storiesOf('components/ButtonComponent', module)
+storiesOf('components/ButtonItem', module)
   .addDecorator(CenterDecorator)
   .add('normal', () => ({
     components,
     render (h) {
-      return <button-component onClick={this.logEvent} label={text('label', 'Нажать на кнопку')} />
+      return <button-item onClick={this.logEvent}>{text('label', 'SUBMIT')}</button-item>
     },
-    methods: { logEvent: action('clicked') }
+    methods: { logEvent: action('clicked!') }
   }))
 
-storiesOf('components/InputComponent', module)
+storiesOf('components/InputItem', module)
   .addDecorator(CenterDecorator)
   .add('normal', () => ({
     components,
     render (h) {
-      return <input-component onInput={this.logEvent} label={text('label', 'Поле')} />
+      return <input-item onInput={this.logEvent} label={text('label', 'Field name')} />
     },
-    methods: { logEvent: action('input') }
+    methods: { logEvent: action('inputed!') }
   }))

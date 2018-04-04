@@ -1,18 +1,18 @@
+@import '~src/styles/variables';
 @import '~src/styles/mixins';
-@import '~src/styles/colors';
 
 .form-component {
     @include flex(column, flex-start, flex-end);
     border-radius: 4px;
-    border: 1px solid $a700;
-    box-shadow: 0 4px 8px rgba($a700, .3);
+    border: 1px solid $primary;
+    box-shadow: 0 4px 8px rgba($primary, .3);
     padding: 40px 36px;
     box-sizing: border-box;
     width: 100%;
-    .input-component {
+    .input-item {
         margin-bottom: 20px;
     }
-    .button-component {
+    .button-item {
         margin-top: 12px;
     }
 }

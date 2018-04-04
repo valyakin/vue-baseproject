@@ -1,6 +1,6 @@
 <div class="form-component">
-    <input-component label="Фамилия"></input-component>
-    <input-component label="Имя"></input-component>
-    <input-component label="Отчество"></input-component>
-    <button-component label="Отправить"></button-component>
+    <input-item label="First name" v-model="firstname"></input-item>
+    <input-item label="Surname" v-model="surname"></input-item>
+    <input-item label="Location" v-model="location"></input-item>
+    <button-item @click="submit">SUBMIT</button-item>
   </div>

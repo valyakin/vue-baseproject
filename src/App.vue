@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <router-view/>
+    <modal-stack :stack="$store.state.modals.stack" />
   </div>
 </template>
 
 <script>
+import * as components from 'src/components'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components
 }
 </script>
 
 <style>
-html, body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  #app {
+    height: 100%;
+  }
 </style>
