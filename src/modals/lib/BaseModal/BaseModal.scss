@@ -2,9 +2,9 @@
 @import '~src/styles/variables';
 
 .root-base-modal {
-  width: 20rem;
-  height: 20rem;
+  box-shadow: 0 .5rem .75rem $white-shadow;
   background-color: $white;
   padding: .75rem;
-  box-shadow: 0 .5rem .75rem $white-shadow;
+  width: 20rem;
+  height: 20rem;
 }

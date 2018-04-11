@@ -3,12 +3,12 @@
 
 .form-component {
   @include flex(column, flex-start, flex-end);
-  border-radius: 4px;
   border: 1px solid $primary;
+  border-radius: 4px;
   box-shadow: 0 4px 8px $primary-transparent;
   padding: 40px 36px;
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
   .input-item {
     margin-bottom: 20px;
   }

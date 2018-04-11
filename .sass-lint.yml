@@ -1,9 +1,36 @@
 files:
   include: 'src/**/*.s+(a|c)ss'
 rules:
-  property-sort-order: 0
+  no-mergeable-selectors: 2
+  no-trailing-zero: 2
+  no-color-keywords: 2
+  brace-style: 2
+  no-duplicate-properties: 2
+  border-zero: 2
+  no-trailing-whitespace: 2
+  mixins-before-declarations: 2
+  function-name-format: 2
+  pseudo-element: 2
+  clean-import-paths: 2
+  no-transition-all: 2
+  shorthand-values: 2
+  space-after-comma: 2
+  quotes: 2
+  single-line-per-selector: 2
+  declarations-before-nesting: 2
+  space-between-parens: 2
+  space-before-brace: 2
+  space-after-colon: 2
+  trailing-semicolon: 2
+  empty-args: 2
+  zero-unit: 2
+  leading-zero: 2
+  variable-name-format: 2
   nesting-depth: 0
   empty-line-between-blocks: 0
+  property-sort-order:
+    - 2
+    - order: concentric
   indentation:
     - 2
     -
