@@ -1,0 +1,10 @@
+files:
+  include: 'src/**/*.s+(a|c)ss'
+rules:
+  property-sort-order: 0
+  nesting-depth: 0
+  empty-line-between-blocks: 0
+  indentation:
+    - 2
+    -
+      size: 2

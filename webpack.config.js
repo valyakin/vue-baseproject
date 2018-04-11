@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var SassLintPlugin = require('sasslint-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -84,7 +85,12 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new SassLintPlugin({
+      glob: 'src/**/*.s?(a|c)ss'
+    })
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {

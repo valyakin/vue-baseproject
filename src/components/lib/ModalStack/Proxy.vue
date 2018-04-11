@@ -1,5 +1,4 @@
 <script>
-
 export default {
   name: 'proxy',
   abstract: true,
@@ -15,5 +14,4 @@ export default {
     })
   }
 }
-
 </script>
