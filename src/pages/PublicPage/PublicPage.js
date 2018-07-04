@@ -6,13 +6,13 @@ export default {
   components,
   methods: {
     ...mapActions({
-      openModal: 'modals/open'
+      openModal: 'modals/open',
     }),
     submit (data) {
       this.openModal({
         factory: () => BaseModal,
-        data
+        data,
       })
-    }
-  }
+    },
+  },
 }

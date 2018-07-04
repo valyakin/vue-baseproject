@@ -4,14 +4,14 @@ export default {
   abstract: true,
   props: {
     component: {
-      type: [ String, Object, Function ]
+      type: [ String, Object, Function ],
     },
-    pass: Object
+    pass: Object,
   },
   render (createElement) {
     return createElement(this.component, {
-      props: this.pass
+      props: this.pass,
     })
-  }
+  },
 }
 </script>

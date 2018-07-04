@@ -11,11 +11,11 @@ import Proxy from './Proxy.vue'
 
 export default {
   props: {
-    modal: Object
+    modal: Object,
   },
   components: {
-    Proxy
-  }
+    Proxy,
+  },
 }
 </script>
 

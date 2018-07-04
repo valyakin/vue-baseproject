@@ -5,20 +5,20 @@ export default {
     return {
       firstname: '',
       surname: '',
-      location: ''
+      location: '',
     }
   },
   components: {
     ButtonItem,
-    InputItem
+    InputItem,
   },
   methods: {
     submit () {
       this.$emit('submit', {
         firstname: this.firstname,
         surname: this.surname,
-        location: this.location
+        location: this.location,
       })
-    }
-  }
+    },
+  },
 }

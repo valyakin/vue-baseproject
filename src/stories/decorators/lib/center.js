@@ -10,14 +10,14 @@ export default () => ({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      overflow: 'auto'
+      overflow: 'auto',
     }}>
       <div style={{
-        margin: 'auto'
+        margin: 'auto',
       }}>
         <story/>
       </div>
     </div>
     )
-  }
+  },
 })

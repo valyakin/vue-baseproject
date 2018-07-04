@@ -3,11 +3,11 @@ export default minWidth => function () {
     render (h) {
       return (
       <div style={{
-        minWidth: `${minWidth}px`
+        minWidth: `${minWidth}px`,
       }}>
         <story/>
       </div>
       )
-    }
+    },
   }
 }

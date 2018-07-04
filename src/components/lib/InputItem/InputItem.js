@@ -1,13 +1,13 @@
 export default {
   props: {
-    label: String
+    label: String,
   },
   data: () => ({
-    input: ''
+    input: '',
   }),
   methods: {
     onInput () {
       this.$emit('input', this.input)
-    }
-  }
+    },
+  },
 }

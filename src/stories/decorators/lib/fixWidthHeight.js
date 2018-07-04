@@ -8,11 +8,11 @@ export default (width, height) => function () {
           hidth: `${width}px`,
           minHeight: `${height}px`,
           maxHeight: `${height}px`,
-          height: `${height}px`
+          height: `${height}px`,
         }}>
           <story/>
         </div>
       )
-    }
+    },
   }
 }

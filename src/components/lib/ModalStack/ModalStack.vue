@@ -9,11 +9,11 @@ import Modal from './Modal.vue'
 
 export default {
   props: {
-    stack: Array
+    stack: Array,
   },
   components: {
-    Modal
-  }
+    Modal,
+  },
 }
 </script>
 

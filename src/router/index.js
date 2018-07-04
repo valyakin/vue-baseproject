@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'public',
-      component: Pages.PublicPage
-    }
-  ]
+      component: Pages.PublicPage,
+    },
+  ],
 })

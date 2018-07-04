@@ -3,11 +3,11 @@ export default maxWidth => function () {
     render (h) {
       return (
       <div style={{
-        maxWidth: `${maxWidth}px`
+        maxWidth: `${maxWidth}px`,
       }}>
         <story/>
       </div>
       )
-    }
+    },
   }
 }

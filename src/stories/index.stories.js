@@ -10,14 +10,14 @@ function storyFrom (render) {
   return () => ({
     components: {
       ...components,
-      ...modals
+      ...modals,
     },
     render,
     methods: {
       logEvent (actionName) {
         return action(actionName)
-      }
-    }
+      },
+    },
   })
 }
 

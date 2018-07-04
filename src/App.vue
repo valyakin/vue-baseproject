@@ -10,7 +10,7 @@ import * as components from 'src/components'
 
 export default {
   name: 'app',
-  components
+  components,
 }
 </script>
 

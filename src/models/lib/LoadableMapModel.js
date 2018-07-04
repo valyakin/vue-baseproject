@@ -8,13 +8,13 @@ module.exports = class LoadableMapModel {
   put (key, value) {
     return new LoadableMapModel(this.type, {
       ...this.data,
-      [key]: value
+      [key]: value,
     })
   }
 
   remove (key) {
     const data = {
-      ...this.data
+      ...this.data,
     }
     delete data[key]
     return new LoadableMapModel(this.type, data)

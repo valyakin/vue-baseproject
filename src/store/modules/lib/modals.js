@@ -6,18 +6,18 @@ export const MODALS_CLOSE = 'modals/close'
 export default {
   namespaced: true,
   state: {
-    stack: []
+    stack: [],
   },
   mutations: {
     [MODALS_OPEN]: (state, modal) => {
       state.stack.push({
         id: uniqid(),
-        modal
+        modal,
       })
     },
     [MODALS_CLOSE]: (state) => {
       state.stack.pop()
-    }
+    },
   },
   actions: {
     open ({ commit }, modal) {
@@ -25,6 +25,6 @@ export default {
     },
     close ({ commit }) {
       commit(MODALS_CLOSE)
-    }
-  }
+    },
+  },
 }

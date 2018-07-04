@@ -4,7 +4,7 @@ const AbstractModel = require('./AbstractModel')
 const schemaFactory = (type) => ({
   isLoading: Joi.boolean().required(),
   isLoaded: Joi.boolean().required(),
-  value: Joi.object().type(type).allow(null)
+  value: Joi.object().type(type).allow(null),
 })
 
 module.exports.schemaFactory = schemaFactory
@@ -13,7 +13,7 @@ module.exports = class LoadableModel extends AbstractModel {
   constructor (type, data = {
     isLoading: true,
     isLoaded: false,
-    value: null
+    value: null,
   }, options) {
     super(data, schemaFactory(type), options)
     this.type = type
@@ -24,7 +24,7 @@ module.exports = class LoadableModel extends AbstractModel {
     return new LoadableModel(this.type, {
       isLoaded: true,
       isLoading: false,
-      value
+      value,
     })
   }
 
@@ -32,7 +32,7 @@ module.exports = class LoadableModel extends AbstractModel {
     return new LoadableModel(this.type, {
       isLoaded: this.isLoaded,
       isLoading: true,
-      value: this.value
+      value: this.value,
     })
   }
 }
