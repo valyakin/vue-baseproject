@@ -1,6 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-var SassLintPlugin = require('sasslint-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -87,9 +87,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
-    new SassLintPlugin({
-      glob: 'src/**/*.s?(a|c)ss'
-    })
+    new StyleLintPlugin(),
   ]
 }
 

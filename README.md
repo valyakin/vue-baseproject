@@ -17,6 +17,12 @@ yarn storybook
 # build for production with minification
 yarn build
 
+# run eslint in project
+yarn lint
+
+# run style linter in project
+yarn lint-style
+
 # generate component files from template
 yarn generate:component ComponentName
 
