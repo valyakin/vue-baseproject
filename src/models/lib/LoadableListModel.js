@@ -1,5 +1,5 @@
-const Joi = require('joi-browser')
-const AbstractModel = require('./AbstractModel')
+import Joi from 'joi'
+import AbstractModel from './AbstractModel'
 
 const schemaFactory = (type) => ({
   isLoading: Joi.boolean().required(),
@@ -7,9 +7,7 @@ const schemaFactory = (type) => ({
   value: Joi.array().items(Joi.object().type(type)),
 })
 
-module.exports.schemaFactory = schemaFactory
-
-module.exports = class LoadableListModel extends AbstractModel {
+export default class LoadableListModel extends AbstractModel {
   constructor (type, data = {
     isLoaded: false,
     isLoading: false,
@@ -34,9 +32,5 @@ module.exports = class LoadableListModel extends AbstractModel {
       isLoading: true,
       value: this.value,
     })
-  }
-
-  find (visitor) {
-    this.value.find(visitor)
   }
 }

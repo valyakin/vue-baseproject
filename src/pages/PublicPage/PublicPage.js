@@ -3,7 +3,9 @@ import { BaseModal } from 'src/modals'
 import { mapActions } from 'vuex'
 
 export default {
-  components,
+  components: {
+    ...components,
+  },
   methods: {
     ...mapActions({
       openModal: 'modals/open',

@@ -1,4 +1,4 @@
-module.exports = class LoadableMapModel {
+export default class LoadableMapModel {
   constructor (type, data = {}) {
     this.type = type
     this.data = data

@@ -1,37 +1,31 @@
-import { storiesOf, addDecorator } from '@storybook/vue'
+import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, text } from '@storybook/addon-knobs'
-import * as components from 'src/components'
-import * as modals from 'src/modals'
-import * as decorators from './decorators'
-import 'src/styles/_global.scss'
+import { linkTo } from '@storybook/addon-links'
 
-function storyFrom (render) {
-  return () => ({
-    components: {
-      ...components,
-      ...modals,
+import MyButton from '../components/MyButton.vue'
+import Welcome from '../components/Welcome.vue'
+
+storiesOf('Welcome', module).add('to Storybook', () => ({
+  components: { Welcome },
+  template: '<welcome :showApp="action" />',
+  methods: { action: linkTo('Button') },
+}))
+
+storiesOf('Button', module)
+  .add('with text', () => ({
+    components: { MyButton },
+    template: '<my-button @click="action">Hello Button</my-button>',
+    methods: { action: action('clicked') },
+  }))
+  .add('with JSX', () => ({
+    components: { MyButton },
+    render () {
+      return <my-button onClick={this.action}>With JSX</my-button>
     },
-    render,
-    methods: {
-      logEvent (actionName) {
-        return action(actionName)
-      },
-    },
-  })
-}
-
-addDecorator(withKnobs)
-
-storiesOf('widgets/FormComponent', module)
-  .addDecorator(decorators.minWidth(400))
-  .addDecorator(decorators.center)
-  .add('normal', storyFrom(function (h) { return <form-component onSubmit={this.logEvent('submit')}/> }))
-
-storiesOf('components/ButtonItem', module)
-  .addDecorator(decorators.center)
-  .add('normal', storyFrom(function (h) { return <button-item onClick={this.logEvent('click')}>{text('label', 'SUBMIT')}</button-item> }))
-
-storiesOf('components/InputItem', module)
-  .addDecorator(decorators.center)
-  .add('normal', storyFrom(function (h) { return <input-item onInput={this.logEvent('input')} label={text('label', 'Field name')} /> }))
+    methods: { action: linkTo('clicked') },
+  }))
+  .add('with some emoji', () => ({
+    components: { MyButton },
+    template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
+    methods: { action: action('clicked') },
+  }))

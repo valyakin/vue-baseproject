@@ -1,21 +1,30 @@
 # vue-baseproject
 
-> A Vue.js base project
+> A Vue.js project from @vue/cli 3 template
 
-## Build Setup
+## Prerequisites
+
+- npm > 6.1.0
+
+- node > v8.11
+
+- yarn > 1.7.0
+
+> :warning: Use only **Yarn** to manage dependencies
+
+## Setup & Run
+
+### Development
 
 ``` bash
 # install dependencies
 yarn
 
-# serve with hot reload at localhost:8080
-yarn dev
+# serve with hot reload
+yarn serve
 
 # run storybook for UI components development with hot reload at localhost:6006
 yarn storybook
-
-# build for production with minification
-yarn build
 
 # run eslint in project
 yarn lint
@@ -28,4 +37,14 @@ yarn generate:component ComponentName
 
 # generate page files from template
 yarn generate:page PageName
+```
+
+### Production
+
+``` bash
+# install dependencies
+yarn
+
+# build for production with minification
+yarn build
 ```
