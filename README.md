@@ -23,9 +23,6 @@ yarn
 # serve with hot reload
 yarn serve
 
-# run storybook for UI components development with hot reload at localhost:6006
-yarn storybook
-
 # run eslint in project
 yarn lint
 
