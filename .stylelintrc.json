@@ -14,6 +14,11 @@
     "number-no-trailing-zeros": true,
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "single",
+    "unit-whitelist": [["rem", "deg", "%", "s"], {
+      "ignoreProperties": {
+        "px": [ "/^border/", "box-shadow" ]
+      }
+    }],
 
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/no-duplicate-dollar-variables": true

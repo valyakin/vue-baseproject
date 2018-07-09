@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lint-style": "stylelint src/**/*scss",
+    "lint-style": "stylelint src/**/*scss src/**/*vue",
     "generate:component": "yo ./lib/generators/component.js",
     "generate:page": "yo ./lib/generators/page.js"
   },
@@ -59,11 +59,11 @@
     ],
     "*.vue": [
       "vue-cli-service lint",
-      "stylelint src/**/*scss",
+      "stylelint",
       "git add"
     ],
     "*.scss": [
-      "stylelint src/**/*scss",
+      "stylelint",
       "git add"
     ]
   }
