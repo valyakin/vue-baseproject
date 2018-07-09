@@ -1,16 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import * as Pages from 'src/pages'
+import { Public } from 'src/pages'
 
 Vue.use(Router)
 
-export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'public',
-      component: Pages.PublicPage,
-    },
-  ],
-})
+export default (context) => {
+  const router = new Router({
+    mode: 'history',
+    routes: [
+      {
+        path: '',
+        redirect: '/public',
+      },
+      {
+        path: '/public',
+        name: 'public',
+        component: Public,
+      },
+    ],
+  })
+
+  return router
+}

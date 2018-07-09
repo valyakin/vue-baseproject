@@ -10,6 +10,7 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.vue', '.json'],
       alias: {
+        'vue$': 'vue/dist/vue.esm.js',
         'src': resolve('src'),
         'joi': 'joi-browser',
       },
@@ -18,12 +19,4 @@ module.exports = {
       new StyleLintPlugin(),
     ],
   },
-
-  baseUrl: undefined,
-  outputDir: undefined,
-  assetsDir: undefined,
-  runtimeCompiler: true,
-  productionSourceMap: undefined,
-  parallel: undefined,
-  css: undefined,
 }

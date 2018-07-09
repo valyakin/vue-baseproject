@@ -1,1 +1,1 @@
-export { default as PublicPage } from './PublicPage/PublicPage.vue'
+export { default as Public } from './lib/Public/Public.vue'
